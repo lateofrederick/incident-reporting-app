@@ -20,7 +20,7 @@ function init() {
   const db = {};
   db.Sequelize = Sequelize;
   db.sequelize = sequelize;
-  db.incidents = require("../models/incident")(sequelize);
+  db.reports = require("../models/report")(sequelize);
 
   return db;
 }
